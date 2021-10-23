@@ -20,7 +20,7 @@ const api = new ExampleApi(basename);
 const cart = new CartApi();
 const store = initStore(api, cart);
 
-describe.skip("Router", () => {
+describe("Router", () => {
     const application = (
         <BrowserRouter basename={basename}>
             <Provider store={store}>
@@ -58,7 +58,7 @@ describe.skip("Router", () => {
     });
 });
 
-describe.skip('Общие требования', () => {
+describe('Общие требования', () => {
     const application = (
         <BrowserRouter basename={basename}>
             <Provider store={store}>
